@@ -11,9 +11,10 @@ namespace feladat3
     {
         static void Main(string[] args)
         {
-            int n = 10;
+            Console.WriteLine("Írja be hogy hány számot akar bekérni! ");
+            int n = int.Parse(Console.ReadLine());
             int[] tomb = new int[n];
-            Console.Write("írjon be 10 számot! ");
+            Console.Write("írjon be " + n + " számot! ");
             for (int i = 0; i < n; i++)
             {
                 tomb[i] = int.Parse(Console.ReadLine());
