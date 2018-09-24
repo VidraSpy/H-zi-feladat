@@ -20,14 +20,20 @@ namespace feladat3
                 tomb[i] = int.Parse(Console.ReadLine());
             }
             int maxin = 0;
+            int minin = 0;
             for (int i = 0; i < n; i++)
             {
                 if (tomb[maxin] < tomb[i])
                 {
                     maxin = i;
                 }
+                else
+                {
+                    minin = i;
+                }
             }
             Console.WriteLine("Legnagyobb beírt szám: " + tomb[maxin].ToString());
+            Console.WriteLine("Legkissebb beírt szám: " + tomb[minin].ToString());
             Console.ReadKey();
         }
     }
